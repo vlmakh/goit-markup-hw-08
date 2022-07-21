@@ -1,0 +1,74 @@
+// -------------  НАША КОМАНДА  -------------
+.section-team {
+    @extend .section;
+    background: $color-bcg;
+}
+
+.team-list {
+//     display: flex;
+//     justify-content: center;
+    list-style: none;
+//     margin-top: 50px;
+}
+
+.person {
+    margin-top: 30px;
+    background: #ffffff;
+//     /* flex-basis: calc (100% / 4 - 30px); */
+//     margin-left: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+//     &:first-child {
+//         margin-left: 0;
+//         }
+}
+
+// .person__image {
+//     max-width: 270px;
+// }
+
+.person__descr {
+    padding: 30px 0 24px 0;
+}
+
+.person__name {
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    line-height: 1.19;
+}
+
+.person__job {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;    
+    line-height: 1.19;
+    color: $color-secondary;    
+}
+
+.join-me {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 206px;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.join-me__link {
+    @extend %join-link;
+    color: #afb1b8;
+//     transition: color $duration $timing-function,
+//         background-color $duration $timing-function;
+
+//     &:hover,
+//     &:focus {
+//         color: #ffffff;
+//         background-color: $color-accent;
+//         }
+}
+

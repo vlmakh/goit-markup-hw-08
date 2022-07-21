@@ -1,0 +1,21 @@
+// .page-header {    
+//     border-bottom: 1px solid #ececec;
+// }
+
+.page-header__container {
+    @extend .container;
+
+    position: relative;
+    padding-top: 16px;
+    padding-bottom: 16px;
+//     display: flex;
+//     align-items: center;
+}
+
+.mobile-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    right: 15px;
+}

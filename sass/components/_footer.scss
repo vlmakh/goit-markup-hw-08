@@ -1,0 +1,12 @@
+// --------------  FOOTER  --------------- 
+.footer {
+    padding: 60px 0;
+    background: $color-bcg-accent;
+}
+
+.footer__container {
+    @extend .container;
+//     display: flex;
+//     align-items: baseline;
+}
+

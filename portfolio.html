@@ -1,0 +1,365 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>    
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="page-header">
+      <div class="container page-header__container">
+        <a href="./index.html" class="logo"
+          >Web<span class="logo--black">Studio</span></a
+        >
+
+        <nav>
+          <ul class="nav">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link">Студия</a>
+            </li>
+            <li class="nav__item">
+              <a href="./portfolio.html" class="nav__link nav__link--current"
+                >Портфолио</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="./contacts.html" class="nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__link">
+              <svg class="icon contacts__icon">
+                <use href="./images/icons.svg#icon-cont-mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__link">
+              <svg class="icon contacts__icon">
+                <use href="./images/icons.svg#icon-cont-phone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- Портфолио -->
+      <section class="section">
+        <!--  <h2>Наши работы</h2> -->
+        <!-- Фильтр отображения работ -->
+        <div class="container-control-panel">
+          <button type="button" class="button-filter">Все</button>
+          <button type="button" class="button-filter">Веб-сайты</button>
+          <button type="button" class="button-filter">Приложения</button>
+          <button type="button" class="button-filter">Дизайн</button>
+          <button type="button" class="button-filter">Маркетинг</button>
+        </div>
+
+        <!-- Список наших работ -->
+        <div class="container">
+          <ul class="product-list">
+            <li class="product-list__item">
+              <a href="" class="product">
+                <div class="product__thumb">
+                  <img
+                    src="./images/project1.jpg"
+                    alt="Технокряк"
+                    width="370"
+                  />
+                  <div class="product__overlay">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Aliquid quis cumque nostrum alias vel saepe corporis.
+                      Doloribus tempora facere et?
+                    </p>
+                  </div>
+                </div>
+                <div class="product__descr">
+                  <h3 class="product__name">Технокряк</h3>
+                  <p class="product__label">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="product-list__item">
+              <a href="" class="product">
+                <div class="product__thumb">
+                  <img
+                    src="./images/project2.jpg"
+                    alt="Постер New Orlean vs Golden Star"
+                    width="370"
+                  />
+                  <div class="product__overlay">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Aliquid quis cumque nostrum alias vel saepe corporis.
+                      Doloribus tempora facere et?
+                    </p>
+                  </div>
+                </div>
+                <div class="product__descr">
+                  <h3 class="product__name">
+                    Постер New Orlean vs Golden Star
+                  </h3>
+                  <p class="product__label">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="product-list__item">
+              <a href="" class="product">
+                <div class="product__thumb">
+                  <img
+                    src="./images/project3.jpg"
+                    alt="Ресторан Seafood"
+                    width="370"
+                  />
+                  <div class="product__overlay">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Aliquid quis cumque nostrum alias vel saepe corporis.
+                      Doloribus tempora facere et?
+                    </p>
+                  </div>
+                </div>
+                <div class="product__descr">
+                  <h3 class="product__name">Ресторан Seafood</h3>
+                  <p class="product__label">Приложение</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="product-list__item">
+              <a href="" class="product">
+                <div class="product__thumb">
+                  <img
+                    src="./images/project4.jpg"
+                    alt="Проект Prime"
+                    width="370"
+                  />
+                  <div class="product__overlay">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Aliquid quis cumque nostrum alias vel saepe corporis.
+                      Doloribus tempora facere et?
+                    </p>
+                  </div>
+                </div>
+                <div class="product__descr">
+                  <h3 class="product__name">Проект Prime</h3>
+                  <p class="product__label">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="product-list__item">
+              <a href="" class="product">
+                <div class="product__thumb">
+                  <img
+                    src="./images/project5.jpg"
+                    alt="Проект Boxes"
+                    width="370"
+                  />
+                  <div class="product__overlay">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Aliquid quis cumque nostrum alias vel saepe corporis.
+                      Doloribus tempora facere et?
+                    </p>
+                  </div>
+                </div>
+                <div class="product__descr">
+                  <h3 class="product__name">Проект Boxes</h3>
+                  <p class="product__label">Приложение</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="product-list__item">
+              <a href="" class="product">
+                <div class="product__thumb">
+                  <img
+                    src="./images/project6.jpg"
+                    alt="Inspiration has no Borders"
+                    width="370"
+                  />
+                  <div class="product__overlay">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Aliquid quis cumque nostrum alias vel saepe corporis.
+                      Doloribus tempora facere et?
+                    </p>
+                  </div>
+                </div>
+                <div class="product__descr">
+                  <h3 class="product__name">Inspiration has no Borders</h3>
+                  <p class="product__label">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="product-list__item">
+              <a href="" class="product">
+                <div class="product__thumb">
+                  <img
+                    src="./images/project7.jpg"
+                    alt="Издание Limited Edition"
+                    width="370"
+                  />
+                  <div class="product__overlay">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Aliquid quis cumque nostrum alias vel saepe corporis.
+                      Doloribus tempora facere et?
+                    </p>
+                  </div>
+                </div>
+                <div class="product__descr">
+                  <h3 class="product__name">Издание Limited Edition</h3>
+                  <p class="product__label">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="product-list__item">
+              <a href="" class="product">
+                <div class="product__thumb">
+                  <img
+                    src="./images/project8.jpg"
+                    alt="Проект LAB"
+                    width="370"
+                  />
+                  <div class="product__overlay">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Aliquid quis cumque nostrum alias vel saepe corporis.
+                      Doloribus tempora facere et?
+                    </p>
+                  </div>
+                </div>
+                <div class="product__descr">
+                  <h3 class="product__name">Проект LAB</h3>
+                  <p class="product__label">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="product-list__item">
+              <a href="" class="product">
+                <div class="product__thumb">
+                  <img
+                    src="./images/project9.jpg"
+                    alt="Growing Business"
+                    width="370"
+                  />
+                  <div class="product__overlay">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Aliquid quis cumque nostrum alias vel saepe corporis.
+                      Doloribus tempora facere et?
+                    </p>
+                  </div>
+                </div>
+                <div class="product__descr">
+                  <h3 class="product__name">Growing Business</h3>
+                  <p class="product__label">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__address">
+          <a href="./index.html" class="logo"
+            >Web<span class="logo--white">Studio</span></a
+          >
+          <address class="address">
+            <p>г. Киев, пр-т Леси Украинки, 26</p>
+
+            <ul class="address__list">
+              <li>
+                <a href="mailto:info@devstudio.com" class="address__link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+380961111111" class="address__link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="footer__joinus">
+          <h4 class="footer__label">ПРИСОЕДИНЯЙТЕСЬ</h4>
+          <ul class="join-us">
+            <li>
+              <a href="" class="join-us__link" aria-label="Instagram">
+                <svg class="icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="join-us__link" aria-label="Twitter">
+                <svg class="icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="join-us__link" aria-label="Facebook">
+                <svg class="icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="join-us__link">
+                <svg class="icon" width="20" height="20" aria-label="LinkedIn">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="footer__signus">
+          <h4 class="footer__label">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h4>
+
+          <div class="signus">
+            <input
+              class="signus__input"
+              type="email"
+              name="sign-email"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="button-signus">
+              Подписаться
+              <svg class="icon signus__icon">
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>

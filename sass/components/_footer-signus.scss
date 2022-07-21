@@ -1,0 +1,46 @@
+// --------------  FOOTER-SIGNUS  ------------
+
+.footer__signus {
+    margin-top: 60px;
+//     margin-left: 93px;
+}
+
+.signus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+//     height: 50px;
+}
+
+.signus__input {
+    width: 100%;
+//     margin-right: 12px;
+    padding: 15px 16px;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: $color-bcg-accent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+
+//     &::placeholder {
+//         font-size: 16px;
+//         color: rgba(255, 255, 255, 0.6);
+//     }
+}
+
+.button-signus {
+    @extend %button;
+    margin-top: 20px;
+    width: 200px;    
+//     margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $color-accent;
+    color: #ffffff;
+}
+
+.signus__icon {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+}

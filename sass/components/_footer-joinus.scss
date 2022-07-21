@@ -1,0 +1,38 @@
+// --------------  FOOTER-JOINUS  ------------
+.footer__joinus {
+    margin-top: 60px;
+    // width: 206px;
+    // margin-left: 70px;
+}
+
+.footer__label { 
+    text-align: center;   
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.join-us {
+    display: flex;
+    width: 206px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    justify-content: space-between;
+
+}
+
+.join-us__link {
+    @extend %join-link;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+
+//     transition: background-color $duration $timing-function;
+
+//     &:hover,
+//     &:focus {
+//         background: $color-accent;
+//     }
+}

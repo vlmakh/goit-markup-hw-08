@@ -1,0 +1,52 @@
+html,
+body {
+    background-color: #ffffff;
+    color: $color-primary;
+    font-family: $font-basic;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.icon {
+    fill: currentColor;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.section__title {
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.container {
+//     width: 1200px;
+//     margin-left: auto;
+//     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+
