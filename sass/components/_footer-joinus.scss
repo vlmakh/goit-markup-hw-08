@@ -1,6 +1,12 @@
 // --------------  FOOTER-JOINUS  ------------
 .footer__joinus {
-    margin-top: 60px;
+    // @media screen and (max-width: 767px) {
+        margin-top: 60px;
+    // }
+    
+    @media screen and (min-width: 768px) {
+        margin-top: 0;
+    }
     // width: 206px;
     // margin-left: 70px;
 }
