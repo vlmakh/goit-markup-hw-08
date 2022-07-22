@@ -1,5 +1,6 @@
 html,
 body {
+    min-width: 320px;
     background-color: #ffffff;
     color: $color-primary;
     font-family: $font-basic;
@@ -40,11 +41,14 @@ img {
 }
 
 .container {
-//     width: 1200px;
-//     margin-left: auto;
-//     margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+
+    @media screen and (min-width: 480px) {        
+        width: 480px;
+    }
 }
 
 

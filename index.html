@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Студия</title>       
+    <title>Студия</title>
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
@@ -15,39 +15,79 @@
         <a href="./index.html" class="logo"
           >Web<span class="logo--black">Studio</span></a
         >
-        <svg class="mobile-icon">
-          <use href="./images/icons.svg#mobile-close"></use>
-        </svg>
-        <svg class="mobile-icon">
-          <use href="./images/icons.svg#mobile-menu"></use>
-        </svg>
 
-        <nav>
-          <ul class="nav">
-            <li class="nav__item"><a href="./index.html" class="nav__link nav__link--current">Студия</a></li>
-            <li class="nav__item"><a href="./portfolio.html" class="nav__link">Портфолио</a></li>
-            <li class="nav__item"><a href="./contacts.html" class="nav__link">Контакты</a></li>
+        <button type="button" class="mobile-menu-button" mobile-menu-open>
+          <svg width="40" height="40" aria-label="Мобильное меню">
+            <!-- <use class="mob-icon-close" href="./images/icons.svg#mobile-close"></use>     -->
+            <use
+              class="icon"
+              href="./images/icons.svg#mobile-menu"
+            ></use>
+          </svg>
+        </button>
+
+        <div class="page-header__menu is-closed" mobile-menu>
+          <div class="close-container">
+            <button type="button" class="mobile-menu-button" mobile-menu-close>
+              <svg width="40" height="40" aria-label="Закрыть мобильное меню">
+                <use class="icon" href="./images/icons.svg#mobile-close"></use>
+              </svg>
+            </button>
+          </div>
+          
+
+          <nav>
+            <ul class="nav">
+              <li class="nav__item">
+                <a href="./index.html" class="nav__link nav__link--current"
+                  >Студия</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="./portfolio.html" class="nav__link">Портфолио</a>
+              </li>
+              <li class="nav__item">
+                <a href="./contacts.html" class="nav__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="contacts">
+            <li class="contacts__item">
+              <a href="tel:+380961111111" class="contacts__link">
+                <svg class="icon contacts__icon">
+                  <use href="./images/icons.svg#icon-cont-phone"></use>
+                </svg>
+                +38 096 111 11 11</a>
+            </li>
+
+            <li class="contacts__item">
+              <a href="mailto:info@devstudio.com" class="contacts__link">
+                <svg class="icon contacts__icon">
+                  <use href="./images/icons.svg#icon-cont-mail"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            
           </ul>
-        </nav>
 
-        <ul class="contacts">
-          <li class="contacts__item">
-            <a href="mailto:info@devstudio.com" class="contacts__link">
-              <svg class="icon contacts__icon">
-                <use href="./images/icons.svg#icon-cont-mail"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contacts__item">
-            <a href="tel:+380961111111" class="contacts__link">
-              <svg class="icon contacts__icon">
-                <use href="./images/icons.svg#icon-cont-phone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+          <ul class="mobile-join-us">
+            <li class="mobile-join-us__item">
+              <a href="" class="mobile-join-us__link">Instagram</a>
+            </li>
+            <li class="mobile-join-us__item">
+              <a href="" class="mobile-join-us__link">Twitter</a>
+            </li>
+            <li class="mobile-join-us__item">
+              <a href="" class="mobile-join-us__link">Facebook</a>
+            </li>
+            <li class="mobile-join-us__item">
+              <a href="" class="mobile-join-us__link">LinkedIn</a>
+            </li>
+          </ul>
+
+        </div>
       </div>
     </header>
 
@@ -158,9 +198,9 @@
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
           <ul class="team-list">
-
             <li class="person">
-              <img class="person__image"
+              <img
+                class="person__image"
                 src="./images/com_demyanenko.jpg"
                 alt="Игорь Демьяненко"
                 width="450"
@@ -202,7 +242,8 @@
             </li>
 
             <li class="person">
-              <img class="person__image"
+              <img
+                class="person__image"
                 src="./images/com_repina.jpg"
                 alt="Ольга Репина"
                 width="450"
@@ -244,7 +285,8 @@
             </li>
 
             <li class="person">
-              <img class="person__image"
+              <img
+                class="person__image"
                 src="./images/com_tarasov.jpg"
                 alt="Николай Тарасов"
                 width="450"
@@ -286,7 +328,8 @@
             </li>
 
             <li class="person">
-              <img class="person__image"
+              <img
+                class="person__image"
                 src="./images/com_ermakov.jpg"
                 alt="Михаил Ермаков"
                 width="450"
@@ -326,7 +369,6 @@
                 </ul>
               </div>
             </li>
-
           </ul>
         </div>
       </section>
@@ -352,7 +394,7 @@
             </li>
             <li class="clients__item">
               <a href="" class="client__link">
-                <svg class="icon" width="44"  height="43">
+                <svg class="icon" width="44" height="43">
                   <use href="./images/icons.svg#icon-client3"></use>
                 </svg>
               </a>
@@ -394,7 +436,7 @@
 
         <form class="form">
           <h3 class="form__title">Оставьте свои данные, мы вам перезвоним</h3>
-                    
+
           <div class="form__field form__field--first">
             <label class="form__label"
               >Имя
@@ -428,13 +470,13 @@
           <div class="form__field">
             <label class="form__label"
               >Комментарий
-              <textarea class="form__textarea"
+              <textarea
+                class="form__textarea"
                 name="comment"
                 rows="5"
                 placeholder="Введите текст"
-              ></textarea>                
+              ></textarea>
             </label>
-
           </div>
 
           <div class="policy-agree">
@@ -444,10 +486,11 @@
                 name="policy-agree"
                 class="policy-checkbox visually-hidden"
               />
-              <span class="policy-checkbox-my"></span>Соглашаюсь с рассылкой и принимаю&nbsp;
+              <span class="policy-checkbox-my"></span>Соглашаюсь с рассылкой и
+              принимаю&nbsp;
               <a href="" class="policy-agree__link">Условия договора</a>
             </label>
-          </div>          
+          </div>
 
           <button type="submit" class="button-order">Отправить</button>
         </form>
@@ -457,7 +500,6 @@
     <!-- FOOTER -->
     <footer class="footer">
       <div class="footer__container">
-
         <div class="footer__address">
           <a href="./index.html" class="logo"
             >Web<span class="logo--white">Studio</span></a
@@ -517,7 +559,12 @@
           <h4 class="footer__label">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h4>
 
           <div class="signus">
-            <input class="signus__input" type="email" name="sign-email" placeholder="E-mail" />
+            <input
+              class="signus__input"
+              type="email"
+              name="sign-email"
+              placeholder="E-mail"
+            />
             <button type="submit" class="button-signus">
               Подписаться
               <svg class="icon signus__icon">
@@ -530,5 +577,6 @@
     </footer>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -11,52 +11,75 @@
   <body>
     <!-- Header -->
     <header class="page-header">
-      <div class="container page-header__container">
-        <a href="./index.html" class="logo"
-          >Web<span class="logo--black">Studio</span></a
-        >
-
-        <svg class="mobile-icon">
-          <use href="./images/icons.svg#mobile-close"></use>
-        </svg>
-        <svg class="mobile-icon">
-          <use href="./images/icons.svg#mobile-menu"></use>
-        </svg>
-
-        <nav>
-          <ul class="nav">
-            <li class="nav__item">
-              <a href="./index.html" class="nav__link">Студия</a>
+      <div class="page-header__container">
+        <a href="./index.html" class="logo">Web<span class="logo--black">Studio</span></a>
+    
+        <button type="button" class="mobile-menu-button" mobile-menu-open>
+          <svg width="40" height="40" aria-label="Мобильное меню">
+            <!-- <use class="mob-icon-close" href="./images/icons.svg#mobile-close"></use>     -->
+            <use class="mob-icon-menu" href="./images/icons.svg#mobile-menu"></use>
+          </svg>
+        </button>
+    
+        <div class="page-header__menu is-closed" mobile-menu>
+          <div class="close-container">
+            <button type="button" class="mobile-menu-button" mobile-menu-close>
+              <svg width="40" height="40" aria-label="Закрыть мобильное меню">
+                <use class="mob-icon-close" href="./images/icons.svg#mobile-close"></use>
+              </svg>
+            </button>
+          </div>
+    
+    
+          <nav>
+            <ul class="nav">
+              <li class="nav__item">
+                <a href="./index.html" class="nav__link">Студия</a>
+              </li>
+              <li class="nav__item">
+                <a href="./portfolio.html" class="nav__link nav__link--current">Портфолио</a>
+              </li>
+              <li class="nav__item">
+                <a href="./contacts.html" class="nav__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+    
+          <ul class="contacts">
+            <li class="contacts__item">
+              <a href="tel:+380961111111" class="contacts__link">
+                <svg class="icon contacts__icon">
+                  <use href="./images/icons.svg#icon-cont-phone"></use>
+                </svg>
+                +38 096 111 11 11</a>
             </li>
-            <li class="nav__item">
-              <a href="./portfolio.html" class="nav__link nav__link--current"
-                >Портфолио</a
-              >
+    
+            <li class="contacts__item">
+              <a href="mailto:info@devstudio.com" class="contacts__link">
+                <svg class="icon contacts__icon">
+                  <use href="./images/icons.svg#icon-cont-mail"></use>
+                </svg>
+                info@devstudio.com</a>
             </li>
-            <li class="nav__item">
-              <a href="./contacts.html" class="nav__link">Контакты</a>
+    
+          </ul>
+    
+          <ul class="mobile-join-us">
+            <li class="mobile-join-us__item">
+              <a href="" class="mobile-join-us__link">Instagram</a>
+            </li>
+            <li class="mobile-join-us__item">
+              <a href="" class="mobile-join-us__link">Twitter</a>
+            </li>
+            <li class="mobile-join-us__item">
+              <a href="" class="mobile-join-us__link">Facebook</a>
+            </li>
+            <li class="mobile-join-us__item">
+              <a href="" class="mobile-join-us__link">LinkedIn</a>
             </li>
           </ul>
-        </nav>
-
-        <ul class="contacts">
-          <li class="contacts__item">
-            <a href="mailto:info@devstudio.com" class="contacts__link">
-              <svg class="icon contacts__icon">
-                <use href="./images/icons.svg#icon-cont-mail"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contacts__item">
-            <a href="tel:+380961111111" class="contacts__link">
-              <svg class="icon contacts__icon">
-                <use href="./images/icons.svg#icon-cont-phone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+    
+        </div>
       </div>
     </header>
 
@@ -367,5 +390,8 @@
         </form>
       </div>
     </footer>
+    
+    
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

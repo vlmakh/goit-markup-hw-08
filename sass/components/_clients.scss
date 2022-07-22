@@ -25,10 +25,11 @@
 //     transition: color $duration $timing-function,
 //         border-color $duration $timing-function;
 
-//     &:hover,
-//     &:focus {
-//         color: $color-accent;
-//         border-color: $color-accent;
-//     }
+    &:hover,
+    &:focus {
+        color: $color-accent;
+        border-color: $color-accent;
+        outline: none;
+    }
 }
 

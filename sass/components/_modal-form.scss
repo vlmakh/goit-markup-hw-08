@@ -1,4 +1,4 @@
-// // ----------- ОКНО ЗАКАЗАТЬ УСЛУГУ ---------- 
+// ----------- ОКНО ЗАКАЗАТЬ УСЛУГУ ---------- 
 .backdrop {
     position: fixed;
     top: 0;
@@ -6,13 +6,9 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
+    overflow-y: scroll;
 
     transition: opacity 500ms $timing-function;
-}
-
-.is-hidden {
-    opacity: 0;
-    pointer-events: none;
 }
 
 .modal-form {
@@ -153,8 +149,6 @@
 
 .policy-agree__label {
     display: inline-flex;
-    // justify-content: center;
-    // align-items: center;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.03em;
