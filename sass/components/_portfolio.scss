@@ -23,6 +23,14 @@
             }
 
     }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 2 * $portfolio-gap) / 3);
+        // &:not(:first-child) {
+        //     margin: 0;
+        // }
+
+    }
         
 }
 

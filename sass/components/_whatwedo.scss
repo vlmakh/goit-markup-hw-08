@@ -1,10 +1,13 @@
 // ----------  ЧЕМ МЫ ЗАНИМАЕМСЯ  -----------
 .section__whatwedo {
     @extend .section;
-    
+        
     @media screen and (max-width: 1199px) {
             display: none;
         }
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
 }
 
 .whatwedo {   
