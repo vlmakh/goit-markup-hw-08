@@ -1,7 +1,10 @@
 
 .section-benefits {
     @extend .section;
-    // padding-bottom: 0;
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 0;
+    }
 }
 
 .benefits {
@@ -28,8 +31,12 @@
         width: calc(768px / 2 - 30px);
         
     }
+
+    @media screen and (min-width: 1200px) {
+        width: calc(1200px / 4 - 30px);
 //     
 //     margin-left: 30px;
+    }
 }
 
 .benefits__thumb {

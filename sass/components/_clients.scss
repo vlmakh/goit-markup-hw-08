@@ -2,8 +2,7 @@
 .clients {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-//     justify-content: space-between;
+    gap: $gap;
     list-style: none;
     margin-top: 30px;
 }
@@ -11,11 +10,15 @@
 .clients__item {
 
     @media screen and (max-width: 767px) {
-    width: calc((100% - 30px) / 2);
+        width: calc((100% - $gap) / 2);
     }
 
     @media screen and (min-width: 768px) {
-        width: calc((100% - 2 * 30px) / 3);
+        width: calc((100% - 2 * $gap) / 3);
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 5 * $gap) / 6);
     }
 }
 
@@ -29,14 +32,18 @@
     border-radius: 4px;
     color: #afb1b8;
 
-//     transition: color $duration $timing-function,
-//         border-color $duration $timing-function;
+
 
     &:hover,
     &:focus {
         color: $color-accent;
         border-color: $color-accent;
         outline: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        transition: color $duration $timing-function,
+        border-color $duration $timing-function;
     }
 }
 

@@ -32,12 +32,21 @@ img {
 .section {
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .section__title {
     font-size: 28px;
     line-height: 1.17;
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+        }
 }
 
 .container {
@@ -52,6 +61,10 @@ img {
 
     @media screen and (min-width: 768px) {
         width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
     }
 }
 
