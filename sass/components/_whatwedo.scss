@@ -2,7 +2,7 @@
 .section__whatwedo {
     @extend .section;
         
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1200px) {
             display: none;
         }
     @media screen and (min-width: 1200px) {
@@ -13,8 +13,7 @@
 .whatwedo {   
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
-        
+    margin-top: 50px;        
 }
 
 .whatwedo__thumb {

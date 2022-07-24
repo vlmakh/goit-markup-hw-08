@@ -49,6 +49,7 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: $color-secondary;
+    transition: color $duration $timing-function;
     
     @media screen and (min-width: 768px) {
         display: flex;
@@ -66,7 +67,7 @@
     @media screen and (min-width: 1200px) {
         padding-top: 32px;
         padding-bottom: 32px;
-        transition: color $duration $timing-function;
+        
     }
 }
 
@@ -77,14 +78,14 @@
     }
 
 
-
 .contacts__icon {    
     
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
         display: none;
     }
     
     @media screen and (min-width: 768px) {
+        display: inline-block;
         width: 14px;
         height: 14px;
         margin-right: 10px;

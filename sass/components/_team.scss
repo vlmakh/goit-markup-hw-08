@@ -7,7 +7,7 @@
 .team-list {
     list-style: none;      
 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
         margin-top: 30px;
@@ -15,8 +15,8 @@
     }
 
     @media screen and (min-width: 1200px) {
-    flex-wrap: nowrap;
-    margin-top: 50px;
+        flex-wrap: nowrap;
+        margin-top: 50px;
     }
 }
 
@@ -26,21 +26,14 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
-    @media screen and (max-width: 767px) {        
-        margin-top: $gap;
+    @media screen and (max-width: 768px) {        
+        margin-top: $gap;        
     }      
-}
 
-.person__image {
-    margin: 0 auto;
-
-    @media screen and (max-width: 767px) {
-        width: 450px;
-        }
-
-    @media screen and (min-width: 768px) {
-        width: 354px;
-    }    
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        margin-top: 0;
+        width: calc((100% - $gap) / 2);
+    }
 }
 
 .person__descr {
@@ -76,15 +69,14 @@
 .join-me__link {
     @extend %join-link;
     color: #afb1b8;
+    
+    transition: color $duration $timing-function,
+        background-color $duration $timing-function;
 
-    @media screen and (min-width: 1200px) {
-        transition: color $duration $timing-function,
-            background-color $duration $timing-function;
-
-        &:hover,
-        &:focus {
-        color: #ffffff;
-        background-color: $color-accent;
-        }
+    &:hover,
+    &:focus {
+    color: #ffffff;
+    background-color: $color-accent;
     }
+    
 }

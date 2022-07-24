@@ -22,8 +22,8 @@
     background: $color-bcg;
     font-weight: 500;
 
-//     transition: background-color $duration $timing-function,
-//         color $duration $timing-function;
+    transition: background-color $duration $timing-function,
+        color $duration $timing-function;
 
     &:hover,
     &:focus {

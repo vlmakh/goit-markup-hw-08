@@ -46,7 +46,7 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
 
-//     transition: color $duration $timing-function;
+    transition: color $duration $timing-function;
 
     &:hover, &:focus {
         color: $color-accent;
@@ -94,7 +94,7 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 
-//     transition: border-color $duration $timing-function;
+    transition: border-color $duration $timing-function;
 
     &:focus {
         border-color: $color-accent;
@@ -110,7 +110,7 @@
     top: 30px;
     left: 15px;
 
-//     transition: color $duration $timing-function;
+    transition: color $duration $timing-function;
 
     .form__input:focus+& {
         fill: $color-accent;
@@ -127,7 +127,7 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 
-//     transition: border-color $duration $timing-function;
+    transition: border-color $duration $timing-function;
 
     &:focus {
         border-color: $color-accent;

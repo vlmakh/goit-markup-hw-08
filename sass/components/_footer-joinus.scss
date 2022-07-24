@@ -1,11 +1,11 @@
 // --------------  FOOTER-JOINUS  ------------
 .footer__joinus {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
         margin-top: 60px;
     }
     
     @media screen and (min-width: 768px) and (max-width: 1200px) {
-        // margin-top: 0;
+        margin-top: 0;
         margin-left: 165px;
     }
 
@@ -41,13 +41,12 @@
     @extend %join-link;
     color: #ffffff;
     background: rgba(255, 255, 255, 0.1);
+    
+    transition: background-color $duration $timing-function;
 
-    @media screen and (min-width: 1200px) {
-        transition: background-color $duration $timing-function;
-
-        &:hover,
-        &:focus {
-            background: $color-accent;
-        }
+    &:hover,
+    &:focus {
+        background: $color-accent;
     }
+    
 }
