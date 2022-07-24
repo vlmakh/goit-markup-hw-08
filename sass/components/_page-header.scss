@@ -35,13 +35,11 @@
 
     @media screen and (min-width: 768px) {
         display: none;
-    }
-
-    
+    }    
 }
 
 .page-header__menu {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
         position: absolute;
         top: 0;
         left: 50%;
@@ -53,16 +51,15 @@
         z-index: 100;        
     }
 
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-        
-        width: 480px;
-             
+    @media screen and (min-width: 480px) and (max-width: 768px) {        
+        width: 480px;             
     }
 
     @media screen and (min-width: 768px) {
-        // position: static;
-        // transform: translateX(0);
-        // padding: 0;
+        position: static;
+        transform: translateX(0);
+        padding: 0;
+        box-shadow: none;
         display: flex;
         width: 100%;
     }
