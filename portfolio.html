@@ -14,18 +14,18 @@
       <div class="page-header__container">
         <a href="./index.html" class="logo">Web<span class="logo--black">Studio</span></a>
     
-        <button type="button" class="mobile-menu-button" mobile-menu-open>
-          <svg width="40" height="40" aria-label="Мобильное меню">
+        <button type="button" class="mobile-menu-button" aria-label="Мобильное меню" data-menu-open>
+          <svg width="40" height="40">
             <!-- <use class="mob-icon-close" href="./images/icons.svg#mobile-close"></use>     -->
-            <use class="mob-icon-menu" href="./images/icons.svg#mobile-menu"></use>
+            <use class="icon" href="./images/icons.svg#mobile-menu"></use>
           </svg>
         </button>
     
-        <div class="page-header__menu is-closed" mobile-menu>
+        <div class="page-header__menu is-closed" data-menu>
           <div class="close-container">
-            <button type="button" class="mobile-menu-button" mobile-menu-close>
-              <svg width="40" height="40" aria-label="Закрыть мобильное меню">
-                <use class="mob-icon-close" href="./images/icons.svg#mobile-close"></use>
+            <button type="button" class="mobile-menu-button" aria-label="Закрыть мобильное меню" data-menu-close>
+              <svg width="40" height="40">
+                <use class="icon" href="./images/icons.svg#mobile-close"></use>
               </svg>
             </button>
           </div>
@@ -66,16 +66,16 @@
     
           <ul class="mobile-join-us">
             <li class="mobile-join-us__item">
-              <a href="" class="mobile-join-us__link">Instagram</a>
+              <a href="#" class="mobile-join-us__link">Instagram</a>
             </li>
             <li class="mobile-join-us__item">
-              <a href="" class="mobile-join-us__link">Twitter</a>
+              <a href="#" class="mobile-join-us__link">Twitter</a>
             </li>
             <li class="mobile-join-us__item">
-              <a href="" class="mobile-join-us__link">Facebook</a>
+              <a href="#" class="mobile-join-us__link">Facebook</a>
             </li>
             <li class="mobile-join-us__item">
-              <a href="" class="mobile-join-us__link">LinkedIn</a>
+              <a href="#" class="mobile-join-us__link">LinkedIn</a>
             </li>
           </ul>
     
@@ -100,12 +100,13 @@
         <div class="container">
           <ul class="product-list">
             <li class="product-list__item">
-              <a href="" class="product">
+              <a href="#" class="product">
                 <div class="product__thumb">
                   <img class="product__image"
                     srcset="./images/project1.jpg 1x, ./images/project1@2x.jpg 2x"
                     src="./images/project1.jpg"
                     alt="Технокряк"
+                    width="370"
                   />
                   <div class="product__overlay">
                     <p>
@@ -123,13 +124,13 @@
             </li>
 
             <li class="product-list__item">
-              <a href="" class="product">
+              <a href="#" class="product">
                 <div class="product__thumb">
                   <img class="product__image"
                   srcset="./images/project2.jpg 1x, ./images/project2@2x.jpg 2x"
                     src="./images/project2.jpg"
                     alt="Постер New Orlean vs Golden Star"
-                    
+                    width="370"
                   />
                   <div class="product__overlay">
                     <p>
@@ -149,7 +150,7 @@
             </li>
 
             <li class="product-list__item">
-              <a href="" class="product">
+              <a href="#" class="product">
                 <div class="product__thumb">
                   <img class="product__image"
                     srcset="./images/project3.jpg 1x, ./images/project3@2x.jpg 2x"
@@ -173,7 +174,7 @@
             </li>
 
             <li class="product-list__item">
-              <a href="" class="product">
+              <a href="#" class="product">
                 <div class="product__thumb">
                   <img class="product__image"
                     srcset="./images/project4.jpg 1x, ./images/project4@2x.jpg 2x"
@@ -197,7 +198,7 @@
             </li>
 
             <li class="product-list__item">
-              <a href="" class="product">
+              <a href="#" class="product">
                 <div class="product__thumb">
                   <img class="product__image"
                     srcset="./images/project5.jpg 1x, ./images/project5@2x.jpg 2x"
@@ -221,7 +222,7 @@
             </li>
 
             <li class="product-list__item">
-              <a href="" class="product">
+              <a href="#" class="product">
                 <div class="product__thumb">
                   <img class="product__image"
                     srcset="./images/project6.jpg 1x, ./images/project6@2x.jpg 2x"
@@ -245,7 +246,7 @@
             </li>
 
             <li class="product-list__item">
-              <a href="" class="product">
+              <a href="#" class="product">
                 <div class="product__thumb">
                   <img class="product__image"
                     srcset="./images/project7.jpg 1x, ./images/project7@2x.jpg 2x"
@@ -269,7 +270,7 @@
             </li>
 
             <li class="product-list__item">
-              <a href="" class="product">
+              <a href="#" class="product">
                 <div class="product__thumb">
                   <img class="product__image"
                     srcset="./images/project8.jpg 1x, ./images/project8@2x.jpg 2x"
@@ -293,7 +294,7 @@
             </li>
 
             <li class="product-list__item">
-              <a href="" class="product">
+              <a href="#" class="product">
                 <div class="product__thumb">
                   <img class="product__image"
                     srcset="./images/project9.jpg 1x, ./images/project9@2x.jpg 2x"
@@ -349,28 +350,28 @@
           <h4 class="footer__label">ПРИСОЕДИНЯЙТЕСЬ</h4>
           <ul class="join-us">
             <li>
-              <a href="" class="join-us__link" aria-label="Instagram">
+              <a href="#" class="join-us__link" aria-label="Instagram">
                 <svg class="icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="" class="join-us__link" aria-label="Twitter">
+              <a href="#" class="join-us__link" aria-label="Twitter">
                 <svg class="icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="" class="join-us__link" aria-label="Facebook">
+              <a href="#" class="join-us__link" aria-label="Facebook">
                 <svg class="icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="" class="join-us__link">
+              <a href="#" class="join-us__link">
                 <svg class="icon" width="20" height="20" aria-label="LinkedIn">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>

@@ -16,8 +16,8 @@
           >Web<span class="logo--black">Studio</span></a
         >
 
-        <button type="button" class="mobile-menu-button" mobile-menu-open>
-          <svg width="40" height="40" aria-label="Мобильное меню">
+        <button type="button" class="mobile-menu-button" aria-label="Мобильное меню" data-menu-open>
+          <svg width="40" height="40">
             <!-- <use class="mob-icon-close" href="./images/icons.svg#mobile-close"></use>     -->
             <use
               class="icon"
@@ -26,10 +26,10 @@
           </svg>
         </button>
 
-        <div class="page-header__menu is-closed" mobile-menu>
+        <div class="page-header__menu is-closed" data-menu>
           <div class="close-container">
-            <button type="button" class="mobile-menu-button" mobile-menu-close>
-              <svg width="40" height="40" aria-label="Закрыть мобильное меню">
+            <button type="button" class="mobile-menu-button" aria-label="Закрыть мобильное меню" data-menu-close>
+              <svg width="40" height="40">
                 <use class="icon" href="./images/icons.svg#mobile-close"></use>
               </svg>
             </button>
@@ -74,16 +74,16 @@
 
           <ul class="mobile-join-us">
             <li class="mobile-join-us__item">
-              <a href="" class="mobile-join-us__link">Instagram</a>
+              <a href="#" class="mobile-join-us__link">Instagram</a>
             </li>
             <li class="mobile-join-us__item">
-              <a href="" class="mobile-join-us__link">Twitter</a>
+              <a href="#" class="mobile-join-us__link">Twitter</a>
             </li>
             <li class="mobile-join-us__item">
-              <a href="" class="mobile-join-us__link">Facebook</a>
+              <a href="#" class="mobile-join-us__link">Facebook</a>
             </li>
             <li class="mobile-join-us__item">
-              <a href="" class="mobile-join-us__link">LinkedIn</a>
+              <a href="#" class="mobile-join-us__link">LinkedIn</a>
             </li>
           </ul>
 
@@ -201,40 +201,42 @@
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
           <ul class="team-list">
+
             <li class="person">
               <img
                 class="person__image"
                 srcset="./images/team1.jpg 1x, ./images/team1@2x.jpg 2x"
                 src="./images/team1.jpg"
                 alt="Игорь Демьяненко"
+                width="450"
                 />
               <div class="person__descr">
-                <h4 class="person__name">Игорь Демьяненко</h4>
+                <h3 class="person__name">Игорь Демьяненко</h3>
                 <p class="person__job">Product Designer</p>
                 <ul class="join-me">
                   <li>
-                    <a href="" class="join-me__link">
+                    <a href="#" class="join-me__link" aria-label="Instagram">
                       <svg class="icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="join-me__link">
+                    <a href="#" class="join-me__link" aria-label="Twitter">
                       <svg class="icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="join-me__link">
+                    <a href="#" class="join-me__link" aria-label="Facebook">
                       <svg class="icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="join-me__link">
+                    <a href="#" class="join-me__link" aria-label="LinkedIn">
                       <svg class="icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -249,35 +251,36 @@
                 class="person__image"
                 srcset="./images/team2.jpg 1x, ./images/team2@2x.jpg 2x"
                 src="./images/team2.jpg"
-                alt="Ольга Репина"                
+                alt="Ольга Репина"
+                width="450"            
               />
               <div class="person__descr">
-                <h4 class="person__name">Ольга Репина</h4>
+                <h3 class="person__name">Ольга Репина</h3>
                 <p class="person__job">Frontend Developer</p>
                 <ul class="join-me">
                   <li>
-                    <a href="" class="join-me__link">
+                    <a href="#" class="join-me__link" aria-label="Instagram">
                       <svg class="icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="join-me__link">
+                    <a href="#" class="join-me__link" aria-label="Twitter">
                       <svg class="icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="join-me__link">
+                    <a href="#" class="join-me__link" aria-label="Facebook">
                       <svg class="icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="join-me__link">
+                    <a href="#" class="join-me__link" aria-label="LinkedIn">
                       <svg class="icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -293,34 +296,35 @@
                 srcset="./images/team3.jpg 1x, ./images/team3@2x.jpg 2x"
                 src="./images/team3.jpg"
                 alt="Николай Тарасов"
+                width="450"
               />
               <div class="person__descr">
-                <h4 class="person__name">Николай Тарасов</h4>
+                <h3 class="person__name">Николай Тарасов</h3>
                 <p class="person__job">Marketing</p>
                 <ul class="join-me">
                   <li>
-                    <a href="" class="join-me__link">
+                    <a href="#" class="join-me__link" aria-label="Instagram">
                       <svg class="icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="join-me__link">
+                    <a href="#" class="join-me__link" aria-label="Twitter">
                       <svg class="icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="join-me__link">
+                    <a href="#" class="join-me__link" aria-label="Facebook">
                       <svg class="icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="join-me__link">
+                    <a href="#" class="join-me__link" aria-label="LinkedIn">
                       <svg class="icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -336,34 +340,35 @@
                 srcset="./images/team4.jpg 1x, ./images/team4@2x.jpg 2x"
                 src="./images/team4.jpg"
                 alt="Михаил Ермаков"
+                width="450"
               />
               <div class="person__descr">
-                <h4 class="person__name">Михаил Ермаков</h4>
+                <h3 class="person__name">Михаил Ермаков</h3>
                 <p class="person__job">UI Designer</p>
                 <ul class="join-me">
                   <li>
-                    <a href="" class="join-me__link">
+                    <a href="#" class="join-me__link" aria-label="Instagram">
                       <svg class="icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="join-me__link">
+                    <a href="#" class="join-me__link" aria-label="Twitter">
                       <svg class="icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="join-me__link">
+                    <a href="#" class="join-me__link" aria-label="Facebook">
                       <svg class="icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="join-me__link">
+                    <a href="#" class="join-me__link" aria-label="LinkedIn">
                       <svg class="icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -382,42 +387,42 @@
           <h2 class="section__title">Постоянные клиенты</h2>
           <ul class="clients">
             <li class="clients__item">
-              <a href="" class="client__link">
+              <a href="#" class="client__link">
                 <svg class="icon" width="44" height="49">
                   <use href="./images/icons.svg#icon-client1"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
-              <a href="" class="client__link">
+              <a href="#" class="client__link">
                 <svg class="icon" width="40" height="52">
                   <use href="./images/icons.svg#icon-client2"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
-              <a href="" class="client__link">
+              <a href="#" class="client__link">
                 <svg class="icon" width="44" height="43">
                   <use href="./images/icons.svg#icon-client3"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
-              <a href="" class="client__link">
+              <a href="#" class="client__link">
                 <svg class="icon" width="80" height="42">
                   <use href="./images/icons.svg#icon-client4"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
-              <a href="" class="client__link">
+              <a href="#" class="client__link">
                 <svg class="icon" width="59" height="47">
                   <use href="./images/icons.svg#icon-client5"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
-              <a href="" class="client__link">
+              <a href="#" class="client__link">
                 <svg class="icon" width="88" height="45">
                   <use href="./images/icons.svg#icon-client6"></use>
                 </svg>
@@ -491,7 +496,7 @@
               />
               <span class="policy-checkbox-my"></span>Соглашаюсь с рассылкой и
               принимаю&nbsp;
-              <a href="" class="policy-agree__link">Условия договора</a>
+              <a href="#" class="policy-agree__link">Условия договора</a>
             </label>
           </div>
 
@@ -528,28 +533,28 @@
           <h4 class="footer__label">ПРИСОЕДИНЯЙТЕСЬ</h4>
           <ul class="join-us">
             <li>
-              <a href="" class="join-us__link" aria-label="Instagram">
+              <a href="#" class="join-us__link" aria-label="Instagram">
                 <svg class="icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="" class="join-us__link" aria-label="Twitter">
+              <a href="#" class="join-us__link" aria-label="Twitter">
                 <svg class="icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="" class="join-us__link" aria-label="Facebook">
+              <a href="#" class="join-us__link" aria-label="Facebook">
                 <svg class="icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="" class="join-us__link">
+              <a href="#" class="join-us__link">
                 <svg class="icon" width="20" height="20" aria-label="LinkedIn">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
