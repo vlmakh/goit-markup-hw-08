@@ -96,7 +96,7 @@
 
     transition: border-color $duration $timing-function;
 
-    &:focus {
+    &:hover, &:focus {
         border-color: $color-accent;
         outline: none;
     }
@@ -112,7 +112,7 @@
 
     transition: color $duration $timing-function;
 
-    .form__input:focus+& {
+    .form__input:hover+&, .form__input:focus+& {
         fill: $color-accent;
         }
 }
@@ -129,7 +129,7 @@
 
     transition: border-color $duration $timing-function;
 
-    &:focus {
+    &:hover, &:focus {
         border-color: $color-accent;
         outline: none;
     }
