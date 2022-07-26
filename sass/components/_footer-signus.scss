@@ -1,65 +1,65 @@
 // --------------  FOOTER-SIGNUS  ------------
 
 .footer__signus {
-    margin-top: 60px;
+  margin-top: 60px;
 
-    @media screen and (min-width: 768px) {
-        width: 450px;
-    }
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
 
-    @media screen and (min-width: 1200px) {
-        margin-top: 0;
-        margin-left: auto;
-        width: 570px;
-    }    
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    margin-left: auto;
+    width: 570px;
+  }
 }
 
 .signus {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    @media screen and (min-width: 1200px) {
-        flex-direction: row;
-    }
-//     height: 50px;
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+  //     height: 50px;
 }
 
 .signus__input {
-    width: 100%;
-    padding: 15px 16px;
+  width: 100%;
+  padding: 15px 16px;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: $color-bcg-accent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  &::placeholder {
+    font-size: 16px;
     color: rgba(255, 255, 255, 0.6);
-    background-color: $color-bcg-accent;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    &::placeholder {
-        font-size: 16px;
-        color: rgba(255, 255, 255, 0.6);
-    }
+  }
 
-    @media screen and (min-width: 1200px) {
-        width: 358px;
-    }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 
 .button-signus {
-    @extend %button;
-    margin-top: 20px;
-    width: 200px;   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: $color-accent;
-    color: #ffffff;
+  @extend %button;
+  margin-top: 20px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $color-accent;
+  color: #ffffff;
 
-    @media screen and (min-width: 1200px) {
-            margin-top: 0;
-            margin-left: 12px;
-        }
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    margin-left: 12px;
+  }
 }
 
 .signus__icon {
-    margin-left: 10px;
-    width: 24px;
-    height: 24px;
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
 }

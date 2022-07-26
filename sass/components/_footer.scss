@@ -1,18 +1,16 @@
-// --------------  FOOTER  --------------- 
+// --------------  FOOTER  ---------------
 .footer {
-    padding: 60px 0;
-    background: $color-bcg-accent;
+  padding: 60px 0;
+  background: $color-bcg-accent;
 }
 
 .footer__container {
-    @extend .container;
+  @extend .container;
 
-    @media screen and (min-width: 768px) { 
-        display: flex;
-        flex-wrap: wrap;
-        align-items: baseline;
-        justify-content: center;
-    }
-
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+  }
 }
-

@@ -1,103 +1,99 @@
-// -------------- PRODUCTS-LIST  -------------- 
+// -------------- PRODUCTS-LIST  --------------
 
-.product-list {       
-    list-style: none;
+.product-list {
+  list-style: none;
 
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
-        gap: $portfolio-gap; 
-    }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $portfolio-gap;
+  }
 }
 
 .product-list__item {
-    border: 1px solid #eeeeee;
+  border: 1px solid #eeeeee;
+  &:not(:first-child) {
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - $portfolio-gap) / 2);
     &:not(:first-child) {
-        margin-top: 20px;
+      margin: 0;
     }
+  }
 
-    @media screen and (min-width: 768px) {
-        width: calc((100% - $portfolio-gap) / 2);
-        &:not(:first-child) {
-            margin: 0;
-            }
-
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: calc((100% - 2 * $portfolio-gap) / 3);
-        // &:not(:first-child) {
-        //     margin: 0;
-        // }
-
-    }
-        
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 2 * $portfolio-gap) / 3);
+    // &:not(:first-child) {
+    //     margin: 0;
+    // }
+  }
 }
 
 .product {
-    display: block;
-    text-decoration: none;
-    color: $color-primary;
+  display: block;
+  text-decoration: none;
+  color: $color-primary;
 
-    &:hover,
-    &:focus {
-        outline: none;
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-            1px 4px 6px rgba(0, 0, 0, 0.16);
-    }
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .product__thumb {
-    position: relative;
-    overflow: hidden;
-    height: 294px;
-    
-    
+  position: relative;
+  overflow: hidden;
+  height: 294px;
 }
 
 .product__image {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: 50% 50%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
 }
 
 .product__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 77px 24px;
-    width: 100%;
-    height: 100%;
-    background: rgba(33, 150, 243, 0.9);
-    color: #ffffff;
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 00.03em;
-//     overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 77px 24px;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 150, 243, 0.9);
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 00.03em;
+  //     overflow: hidden;
 
-    transform: translatey(100%);
-    transition: transform $duration $timing-function;
+  transform: translatey(100%);
+  transition: transform $duration $timing-function;
 
-    .product:hover &, .product:focus & {
-        transform: translateY(0);
-        }
+  .product:hover &,
+  .product:focus & {
+    transform: translateY(0);
+  }
 }
 
 .product__descr {
-    padding: 20px 24px;
+  padding: 20px 24px;
 }
 
 .product__name {
-    font-size: 18px;
-    line-height: 2;
-    text-align: left;    
+  font-size: 18px;
+  line-height: 2;
+  text-align: left;
 }
 
 .product__label {
-    font-size: 16px;
-    line-height: 1.88;
-    text-align: left;
-    color: $color-secondary;
-    margin-top: 4px;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: left;
+  color: $color-secondary;
+  margin-top: 4px;
 }

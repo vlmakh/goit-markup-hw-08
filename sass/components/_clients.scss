@@ -1,44 +1,42 @@
-//  ---------- Постоянные клиенты ------------ 
+//  ---------- Постоянные клиенты ------------
 .clients {
-    display: flex;
-    flex-wrap: wrap;
-    gap: $gap;
-    list-style: none;
-    margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: $gap;
+  list-style: none;
+  margin-top: 30px;
 }
 
 .clients__item {
+  @media screen and (max-width: 768px) {
+    width: calc((100% - $gap) / 2);
+  }
 
-    @media screen and (max-width: 768px) {
-        width: calc((100% - $gap) / 2);
-    }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    width: calc((100% - 2 * $gap) / 3);
+  }
 
-    @media screen and (min-width: 768px) and (max-width: 1200px) {
-        width: calc((100% - 2 * $gap) / 3);
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: calc((100% - 5 * $gap) / 6);
-    }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 5 * $gap) / 6);
+  }
 }
 
 .client__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    height: 92px;
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
-    color: #afb1b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: #afb1b8;
 
-    transition: color $duration $timing-function,
+  transition: color $duration $timing-function,
     border-color $duration $timing-function;
 
-    &:hover,
-    &:focus {
-        color: $color-accent;
-        border-color: $color-accent;
-        outline: none;
-    }
+  &:hover,
+  &:focus {
+    color: $color-accent;
+    border-color: $color-accent;
+    outline: none;
+  }
 }
-
