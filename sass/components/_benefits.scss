@@ -48,10 +48,18 @@
 
 .benefits__name {
   margin-top: 30px;
-  text-align: center;
+
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  @media screen and (max-width: 1200px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .benefits__descr {

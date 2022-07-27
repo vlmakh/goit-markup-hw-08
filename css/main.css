@@ -519,7 +519,7 @@ img {
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  color: #2196F3;
+  color: #2196f3;
 }
 
 .nav {
@@ -764,11 +764,21 @@ img {
 }
 .hero__title {
   font-weight: 900;
-  font-size: 26px;
-  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
+}
+@media screen and (max-width: 1200px) {
+  .hero__title {
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .button-order {
@@ -816,6 +826,11 @@ img {
 .backdrop.is-hidden .modal-form {
   -webkit-transform: translate(-50%, -50%) scale(0.8);
           transform: translate(-50%, -50%) scale(0.8);
+}
+@media screen and (max-width: 450px) {
+  .modal-form {
+    width: 100%;
+  }
 }
 
 .button-close {
@@ -1054,10 +1069,19 @@ img {
 
 .benefits__name {
   margin-top: 30px;
-  text-align: center;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+@media screen and (max-width: 1200px) {
+  .benefits__name {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__name {
+    text-align: left;
+  }
 }
 
 .benefits__descr {
@@ -1588,9 +1612,10 @@ img {
 }
 
 .product__name {
+  text-align: left;
   font-size: 18px;
   line-height: 2;
-  text-align: left;
+  letter-spacing: 0.06em;
 }
 
 .product__label {

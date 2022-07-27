@@ -28,6 +28,10 @@
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0.8);
   }
+
+    @media screen and (max-width: 450px) {
+      width: 100%;
+    }
 }
 
 .button-close {
