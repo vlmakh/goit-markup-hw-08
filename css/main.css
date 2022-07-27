@@ -1575,16 +1575,6 @@ img {
 .product__thumb {
   position: relative;
   overflow: hidden;
-  height: 294px;
-}
-
-.product__image {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 50% 50%;
-     object-position: 50% 50%;
 }
 
 .product__overlay {
