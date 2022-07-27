@@ -36,8 +36,6 @@
     // }
 
     @media screen and (min-width: 768px) {
-        // position: static;
-        // transform: translateX(0);
         padding: 0;
         box-shadow: none;
         display: flex;
@@ -51,9 +49,16 @@
 
 .mobile-join-us {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    margin-top: 64px;
+    // margin-top: 64px;
     list-style: none;
+
+    @media screen and (max-width: 767px) {
+            position: absolute;
+            bottom: 48px;
+            left: 40px;
+        }
 
     @media screen and (min-width: 768px) {
         display: none;

@@ -306,7 +306,6 @@ summary {
 
 html,
 body {
-  min-width: 320px;
   background-color: #ffffff;
   color: #212121;
   font-family: "Roboto", sans-serif;
@@ -481,11 +480,19 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 64px;
   list-style: none;
+}
+@media screen and (max-width: 767px) {
+  .mobile-join-us {
+    position: absolute;
+    bottom: 48px;
+    left: 40px;
+  }
 }
 @media screen and (min-width: 768px) {
   .mobile-join-us {
@@ -582,7 +589,13 @@ img {
 
 .contacts {
   list-style: none;
-  margin-top: 300px;
+}
+@media screen and (max-width: 767px) {
+  .contacts {
+    position: absolute;
+    bottom: 134px;
+    left: 40px;
+  }
 }
 @media screen and (min-width: 768px) {
   .contacts {
@@ -646,6 +659,11 @@ img {
   color: #757575;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 479px) {
+  .contacts__link {
+    font-size: 24px;
+  }
 }
 @media screen and (min-width: 768px) {
   .contacts__link {
