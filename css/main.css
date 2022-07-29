@@ -453,22 +453,22 @@ img {
     position: fixed;
     top: 0;
     left: 0;
-    padding: 10px 15px 48px 40px;
     width: 100vw;
     height: 100vh;
+    padding: 10px 15px 48px 40px;
     background-color: #ffffff;
     z-index: 100;
   }
 }
 @media screen and (min-width: 768px) {
   .page-header__menu {
+    width: 100%;
     padding: 0;
-    -webkit-box-shadow: none;
-            box-shadow: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
 
@@ -515,6 +515,11 @@ img {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+@media screen and (max-width: 410px) {
+  .mobile-join-us__link {
+    font-size: 12px;
+  }
 }
 
 .nav {
@@ -684,6 +689,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .contacts__link {
+    font-size: 14px;
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -766,6 +772,12 @@ img {
     background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-1600@2x.jpg");
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+    padding-top: 200px;
+  }
+}
 .hero__title {
   font-weight: 900;
   text-align: center;
@@ -812,11 +824,6 @@ img {
 
 .modal-form {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
-  width: 450px;
   padding: 40px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -833,7 +840,29 @@ img {
 }
 @media screen and (max-width: 450px) {
   .modal-form {
-    width: 100%;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0) scale(1);
+            transform: translate(-50%, 0) scale(1);
+    width: 100vw;
+  }
+}
+@media screen and (min-width: 450px) and (max-width: 1200px) {
+  .modal-form {
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0) scale(1);
+            transform: translate(-50%, 0) scale(1);
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-form {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    width: 528px;
   }
 }
 
@@ -978,13 +1007,28 @@ img {
 }
 
 .policy-agree__label {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (max-width: 450px) {
+  .policy-agree__label {
+    display: inline;
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 450px) {
+  .policy-agree__label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .policy-agree__label {
+    font-size: 14px;
+  }
 }
 
 .policy-agree__link {
@@ -1077,12 +1121,12 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
   .benefits__name {
     text-align: center;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .benefits__name {
     text-align: left;
   }
@@ -1565,9 +1609,9 @@ img {
   display: block;
   text-decoration: none;
   color: #212121;
+  height: 100%;
 }
 .product:hover, .product:focus {
-  outline: none;
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -1600,8 +1644,14 @@ img {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
+@media screen and (max-width: 380px) {
+  .product__overlay {
+    padding: 40px 24px;
+    font-size: 16px;
+  }
+}
 
-.product__descr {
+.product__label {
   padding: 20px 24px;
 }
 
@@ -1612,7 +1662,7 @@ img {
   letter-spacing: 0.06em;
 }
 
-.product__label {
+.product__type {
   font-size: 16px;
   line-height: 1.88;
   text-align: left;

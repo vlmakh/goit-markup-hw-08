@@ -13,10 +13,7 @@
 
 .modal-form {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  width: 450px;
+
   padding: 40px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -29,9 +26,26 @@
     transform: translate(-50%, -50%) scale(0.8);
   }
 
-    @media screen and (max-width: 450px) {
-      width: 100%;
-    }
+  @media screen and (max-width: 450px) {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0) scale(1);
+    width: 100vw;
+  }
+
+  @media screen and (min-width: 450px) and (max-width: 1200px) {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0) scale(1);
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 528px;
+  }
 }
 
 .button-close {
@@ -155,11 +169,24 @@
 }
 
 .policy-agree__label {
-  display: inline-flex;
-  font-size: 12px;
+  // display: inline-flex;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
+
+  @media screen and (max-width: 450px) {
+    display: inline;
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: 450px) {
+    display: flex;
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 
 .policy-agree__link {
