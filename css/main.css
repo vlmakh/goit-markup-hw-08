@@ -1400,6 +1400,7 @@ img {
 
 .footer__label {
   text-align: center;
+  font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -1644,10 +1645,11 @@ img {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 479px) {
   .product__overlay {
     padding: 40px 24px;
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 1.26;
   }
 }
 
