@@ -1,23 +1,44 @@
-// // -------------- BUTTONS-PANEL --------------
-
 .container-control-panel {
   @extend .container;
-
   margin-bottom: 40px;
+  
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    
+   
+  }
+}
+
+.control-panel { 
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+
 
   @media screen and (min-width: 768px) {
     margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
+   flex-wrap: nowrap;
+    
   }
 }
 
 .button-filter {
-  @extend %button;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   height: 38px;
-  margin-right: 8px;
-  margin-bottom: 15px;
-  padding: 0 22px;
+    margin-right: 8px;
+    margin-bottom: 15px;
+    padding: 0 22px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+  
   background: $color-bcg;
   font-weight: 500;
 
@@ -25,14 +46,34 @@
     color $duration $timing-function;
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     background: $color-accent;
     color: #ffffff;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 
-  @media screen and (min-width: 768px) {
+   @media screen and (min-width: 768px) {
     margin-bottom: 0;
   }
 }
+
+ [value="Все"]:checked~.control-panel [for="Все"],
+ [value="Веб-сайт"]:checked~.control-panel [for="Веб-сайт"],
+ [value="Приложение"]:checked~.control-panel [for="Приложение"],
+ [value="Дизайн"]:checked~.control-panel [for="Дизайн"],
+ [value="Маркетинг"]:checked .control-panel [for="Маркетинг"] {
+   color: #ffffff;
+   background-color: $color-accent;
+   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+     0px 2px 2px rgba(0, 0, 0, 0.12);
+ }
+
+
+
+ [value="Веб-сайт"]:checked~.product-list .product-list__item:not([data-category="Веб-сайт"]),
+ [value="Приложение"]:checked~.product-list .product-list__item:not([data-category="Приложение"]),
+ [value="Дизайн"]:checked~.product-list .product-list__item:not([data-category="Дизайн"]),
+ [value="Маркетинг"]:checked~.product-list .product-list__item:not([data-category="Маркетинг"]) {
+   display: none;
+ }

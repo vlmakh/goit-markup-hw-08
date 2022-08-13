@@ -101,18 +101,37 @@
       <section class="section">
         <!--  <h2>Наши работы</h2> -->
         <!-- Фильтр отображения работ -->
+                
         <div class="container-control-panel">
-          <button type="button" class="button-filter">Все</button>
-          <button type="button" class="button-filter">Веб-сайты</button>
-          <button type="button" class="button-filter">Приложения</button>
-          <button type="button" class="button-filter">Дизайн</button>
-          <button type="button" class="button-filter">Маркетинг</button>
-        </div>
+          <input class="radio visually-hidden" type="radio" name="categories" value="Все" id="Все" checked />
+          <input class="radio visually-hidden" type="radio" name="categories" value="Веб-сайт" id="Веб-сайт" />
+          <input class="radio visually-hidden" type="radio" name="categories" value="Приложение" id="Приложение" />
+          <input class="radio visually-hidden" type="radio" name="categories" value="Дизайн" id="Дизайн" />
+          <input class="radio visually-hidden" type="radio" name="categories" value="Маркетинг" id="Маркетинг" />
 
+          <ul class="control-panel">
+            <li>
+              <label class="button-filter" for="Все">Все</label>
+            </li>
+            <li>
+              <label class="button-filter" for="Веб-сайт">Веб-сайты</label>
+            </li>
+            <li>
+              <label class="button-filter" for="Приложение">Приложения</label>
+            </li>
+            <li>
+              <label class="button-filter" for="Дизайн">Дизайн</label>
+            </li>
+            <li>
+              <label  class="button-filter" for="Маркетинг">Маркетинг</label>
+            </li>
+          </ul>
+        
         <!-- Список наших работ -->
-        <div class="container">
+        
+          
           <ul class="product-list">
-            <li class="product-list__item">
+            <li class="product-list__item" data-category="Веб-сайт">
               <a href="#" class="product">
                 <div class="product__thumb">
                   <picture>
@@ -162,8 +181,8 @@
               </a>
             </li>
 
-            <li class="product-list__item">
-              <a href="#" class="product">
+            <li class="product-list__item" data-category="Дизайн">
+             <a href="#" class="product">
                 <div class="product__thumb">
                   <picture>
                     <source
@@ -213,7 +232,7 @@
               </a>
             </li>
 
-            <li class="product-list__item">
+            <li class="product-list__item" data-category="Приложение">
               <a href="#" class="product">
                 <div class="product__thumb">
                   <picture>
@@ -263,7 +282,7 @@
               </a>
             </li>
 
-            <li class="product-list__item">
+            <li class="product-list__item" data-category="Маркетинг">
               <a href="#" class="product">
                 <div class="product__thumb">
                   <picture>
@@ -312,7 +331,7 @@
               </a>
             </li>
 
-            <li class="product-list__item">
+            <li class="product-list__item" data-category="Приложение">
               <a href="#" class="product">
                 <div class="product__thumb">
                   <picture>
@@ -361,7 +380,7 @@
               </a>
             </li>
 
-            <li class="product-list__item">
+            <li class="product-list__item" data-category="Веб-сайт">
               <a href="#" class="product">
                 <div class="product__thumb">
                   <picture>
@@ -410,7 +429,7 @@
               </a>
             </li>
 
-            <li class="product-list__item">
+            <li class="product-list__item" data-category="Дизайн">
               <a href="#" class="product">
                 <div class="product__thumb">
                   <picture>
@@ -459,7 +478,7 @@
               </a>
             </li>
 
-            <li class="product-list__item">
+            <li class="product-list__item" data-category="Маркетинг">
               <a href="#" class="product">
                 <div class="product__thumb">
                   <picture>
@@ -508,7 +527,7 @@
               </a>
             </li>
 
-            <li class="product-list__item">
+            <li class="product-list__item" data-category="Приложение">
               <a href="#" class="product">
                 <div class="product__thumb">
                   <picture>
