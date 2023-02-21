@@ -7,7 +7,18 @@
   background: rgba(0, 0, 0, 0.2);
   overflow-y: scroll;
 
-  transition: opacity 500ms $timing-function;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+
+  transition: opacity $duration $timing-function,
+    visibility $duration $timing-function;
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 
 .modal-form {
@@ -19,9 +30,11 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  transition: transform 500ms $timing-function;
+  transition: transform $duration $timing-function $duration,
+    opacity $duration $timing-function $duration;
 
   .backdrop.is-hidden & {
+    opacity: 0;
     transform: translate(-50%, -50%) scale(0.8);
   }
 
@@ -32,17 +45,14 @@
     width: 100vw;
   }
 
-  @media screen and (min-width: 450px) and (max-width: 1200px) {
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0) scale(1);
-    width: 450px;
-  }
-
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 450px) {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
     width: 528px;
   }
 }
