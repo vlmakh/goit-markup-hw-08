@@ -23,7 +23,6 @@
           data-menu-open
         >
           <svg width="40" height="40">
-            <!-- <use class="mob-icon-close" href="./images/icons.svg#mobile-close"></use>     -->
             <use class="icon" href="./images/icons.svg#mobile-menu"></use>
           </svg>
         </button>
@@ -53,7 +52,7 @@
                 <a href="./portfolio.html" class="nav__link">Портфолио</a>
               </li>
               <li class="nav__item">
-                <a href="./contacts.html" class="nav__link">Контакты</a>
+                <a href="#contacts" class="nav__link">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -108,7 +107,7 @@
         </button>
       </section>
 
-      <!-- Преимущества -->
+      <!-- Benefits -->
       <section class="section-benefits">
         <div class="container">
           <h2 class="visually-hidden">Наши преимущества</h2>
@@ -165,7 +164,7 @@
         </div>
       </section>
 
-      <!-- Чем мы занимаемся -->
+      <!-- What we do -->
       <section class="section__whatwedo">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
@@ -210,7 +209,7 @@
         </div>
       </section>
 
-      <!-- Наша команда -->
+      <!-- Our team -->
       <section class="section-team">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
@@ -490,7 +489,7 @@
         </div>
       </section>
 
-      <!-- Постоянные клиенты -->
+      <!-- Customers -->
       <section class="section">
         <div class="container">
           <h2 class="section__title">Постоянные клиенты</h2>
@@ -542,8 +541,8 @@
       </section>
     </main>
 
-    <!-- Модальное окно - Заказать услугу -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- Modal -->
+    <div class="backdrop is-hidden" data-backdrop>
       <div class="modal-form">
         <button
           type="button"
@@ -614,13 +613,13 @@
             </label>
           </div>
 
-          <button type="submit" class="button-order">Отправить</button>
+          <button type="submit" class="button-modal">Отправить</button>
         </form>
       </div>
     </div>
 
-    <!-- FOOTER -->
-    <footer class="footer">
+    <!-- Footer -->
+    <footer class="footer" id="contacts">
       <div class="footer__container">
         <div class="footer__address">
           <a href="./index.html" class="logo"
