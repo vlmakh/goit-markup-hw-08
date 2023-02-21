@@ -337,13 +337,13 @@ img {
   height: auto;
 }
 
-.section, .section-team, .section__whatwedo, .section-benefits {
+.section, .clients, .team, .whatwedo, .benefits {
   padding-top: 60px;
   padding-bottom: 60px;
   overflow: hidden;
 }
 @media screen and (min-width: 1200px) {
-  .section, .section-team, .section__whatwedo, .section-benefits {
+  .section, .clients, .team, .whatwedo, .benefits {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -360,24 +360,24 @@ img {
   }
 }
 
-.container, .container-control-panel, .footer__container, .container__clients, .page-header__container {
+.container, .container-control-panel, .footer__container, .clients__container, .page-header__container {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media screen and (max-width: 768px) {
-  .container, .container-control-panel, .footer__container, .container__clients, .page-header__container {
+  .container, .container-control-panel, .footer__container, .clients__container, .page-header__container {
     max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-  .container, .container-control-panel, .footer__container, .container__clients, .page-header__container {
+  .container, .container-control-panel, .footer__container, .clients__container, .page-header__container {
     max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .container, .container-control-panel, .footer__container, .container__clients, .page-header__container {
+  .container, .container-control-panel, .footer__container, .clients__container, .page-header__container {
     max-width: 1200px;
   }
 }
@@ -1171,16 +1171,16 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .section-benefits {
+  .benefits {
     padding-bottom: 0;
   }
 }
 
-.benefits {
+.benefits__list {
   list-style: none;
 }
 @media screen and (min-width: 768px) {
-  .benefits {
+  .benefits__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1251,20 +1251,21 @@ img {
 }
 
 @media screen and (max-width: 1200px) {
-  .section__whatwedo {
+  .whatwedo {
     display: none;
   }
 }
 @media screen and (min-width: 1200px) {
-  .section__whatwedo {
+  .whatwedo {
     display: block;
   }
 }
 
-.whatwedo {
+.whatwedo__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  list-style: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1291,15 +1292,15 @@ img {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.section-team {
+.team {
   background: #f5f4fa;
 }
 
-.team-list {
+.team__list {
   list-style: none;
 }
 @media screen and (min-width: 768px) {
-  .team-list {
+  .team__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1310,7 +1311,7 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
-  .team-list {
+  .team__list {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     margin-top: 50px;
@@ -1380,13 +1381,13 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .container__clients {
+  .clients__container {
     padding: 0;
     max-width: 100%;
   }
 }
 
-.clients {
+.clients__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1397,12 +1398,12 @@ img {
   width: 100%;
 }
 @media screen and (max-width: 1199.98px) {
-  .clients {
+  .clients__list {
     gap: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .clients {
+  .clients__list {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     width: 100%;
@@ -1411,25 +1412,25 @@ img {
   }
 }
 
-.moving {
+.moving-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 @media screen and (min-width: 1200px) {
-  .moving {
+  .moving-bar {
     width: 200%;
-    -webkit-animation: clients-move 20s linear infinite;
-            animation: clients-move 20s linear infinite;
+    -webkit-animation: moving 20s linear infinite;
+            animation: moving 20s linear infinite;
   }
 }
-.moving:hover {
+.moving-bar:hover {
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
 }
 
 @media screen and (max-width: 1199.98px) {
-  .clients2 {
+  .clients__list--copy {
     display: none;
   }
 }
@@ -1473,7 +1474,7 @@ img {
   outline: none;
 }
 
-@-webkit-keyframes clients-move {
+@-webkit-keyframes moving {
   from {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
@@ -1484,7 +1485,7 @@ img {
   }
 }
 
-@keyframes clients-move {
+@keyframes moving {
   from {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);

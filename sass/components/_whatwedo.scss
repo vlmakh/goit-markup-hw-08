@@ -1,4 +1,4 @@
-.section__whatwedo {
+.whatwedo {
   @extend .section;
 
   @media screen and (max-width: 1200px) {
@@ -9,8 +9,9 @@
   }
 }
 
-.whatwedo {
+.whatwedo__list {
   display: flex;
+  list-style: none;
   justify-content: space-between;
   margin-top: 50px;
 }

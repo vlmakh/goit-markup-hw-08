@@ -1,10 +1,9 @@
-// -------------  НАША КОМАНДА  -------------
-.section-team {
+.team {
   @extend .section;
   background: $color-bcg;
 }
 
-.team-list {
+.team__list {
   list-style: none;
 
   @media screen and (min-width: 768px) {

@@ -1,4 +1,8 @@
-.container__clients {
+.clients {
+  @extend .section;
+}
+
+.clients__container {
   @extend .container;
 
   @media screen and (min-width: 1200px) {
@@ -7,7 +11,7 @@
   }
 }
 
-.clients {
+.clients__list {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -25,12 +29,12 @@
   }
 }
 
-.moving {
+.moving-bar {
   display: flex;
 
   @media screen and (min-width: 1200px) {
     width: 200%;
-    animation: clients-move 20s linear infinite;
+    animation: moving 20s linear infinite;
   }
 
   &:hover {
@@ -38,7 +42,7 @@
   }
 }
 
-.clients2 {
+.clients__list--copy {
   @media screen and (max-width: 1199.98px) {
     display: none;
   }
@@ -78,7 +82,7 @@
   }
 }
 
-@keyframes clients-move {
+@keyframes moving {
   from {
     transform: translateX(0%);
   }
