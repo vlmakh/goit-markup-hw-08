@@ -1,4 +1,3 @@
-// ----------- ОКНО ЗАКАЗАТЬ УСЛУГУ ----------
 .backdrop {
   position: fixed;
   top: 0;
@@ -169,7 +168,6 @@
 }
 
 .policy-agree__label {
-  // display: inline-flex;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
@@ -216,5 +214,22 @@
     border: 0;
     background-color: $color-accent;
     background-image: url("data:image/svg+xml,%3Csvg width='16' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='16' height='15' rx='2' fill='none'/%3E%3Cpath d='m3.957 7.752-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422Z' fill='%23fff' stroke='%23fff' stroke-width='.2'/%3E%3C/svg%3E");
+  }
+}
+
+.button-modal {
+  @extend %button;
+  width: 200px;
+  margin-top: 30px;
+  background: $color-accent;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+
+  transition: box-shadow $duration $timing-function;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
   }
 }
