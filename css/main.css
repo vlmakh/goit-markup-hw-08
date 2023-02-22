@@ -305,6 +305,16 @@ summary {
   border-radius: 50%;
 }
 
+.anim {
+  opacity: 0;
+  -webkit-transition: opacity 500ms ease-in;
+  transition: opacity 500ms ease-in;
+}
+
+.anim.active {
+  opacity: 1;
+}
+
 html,
 body {
   scroll-behavior: smooth;
