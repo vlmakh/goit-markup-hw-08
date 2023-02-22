@@ -1,0 +1,8 @@
+.anim {
+    opacity: 0;
+    transition: opacity $duration ease-in;
+}
+
+.anim.active {
+    opacity: 1;
+}

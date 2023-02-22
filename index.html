@@ -10,7 +10,7 @@
 
   <body>
     <!-- Header -->
-    <header class="page-header">
+    <header class="page-header" id="header">
       <div class="page-header__container">
         <a href="./index.html" class="logo"
           >Web<span class="logo--black">Studio</span></a
@@ -52,7 +52,7 @@
                 <a href="./portfolio.html" class="nav__link">Портфолио</a>
               </li>
               <li class="nav__item">
-                <a href="#contacts" class="nav__link">Контакты</a>
+                <a href="#contacts" class="nav__link" data-contacts>Контакты</a>
               </li>
             </ul>
           </nav>
@@ -98,21 +98,19 @@
     <main>
       <!-- Hero -->
       <section class="hero">
-        <h1 class="hero__title">
-          ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br />
-          ДЛЯ ВАШЕГО БИЗНЕСА
-        </h1>
+        <h1 class="hero__title title1">ЭФФЕКТИВНЫЕ РЕШЕНИЯ</h1>
+        <h1 class="hero__title title2">ДЛЯ ВАШЕГО БИЗНЕСА</h1>
         <button type="button" class="button-order" data-modal-open>
           Заказать услугу
         </button>
       </section>
 
       <!-- Benefits -->
-      <section class="section-benefits">
+      <section class="benefits">
         <div class="container">
           <h2 class="visually-hidden">Наши преимущества</h2>
-          <ul class="benefits">
-            <li class="benefits__item">
+          <ul class="benefits__list">
+            <li class="benefits__item anim">
               <div class="benefits__thumb">
                 <svg class="benefits__img">
                   <use href="./images/icons.svg#icon-feature1"></use>
@@ -124,7 +122,7 @@
                 формированию позиции.
               </p>
             </li>
-            <li class="benefits__item">
+            <li class="benefits__item anim">
               <div class="benefits__thumb">
                 <svg class="benefits__img">
                   <use href="./images/icons.svg#icon-feature2"></use>
@@ -136,7 +134,7 @@
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="benefits__item">
+            <li class="benefits__item anim">
               <div class="benefits__thumb">
                 <svg class="benefits__img">
                   <use href="./images/icons.svg#icon-feature3"></use>
@@ -148,7 +146,7 @@
                 степени обуславливает.
               </p>
             </li>
-            <li class="benefits__item">
+            <li class="benefits__item anim">
               <div class="benefits__thumb">
                 <svg class="benefits__img">
                   <use href="./images/icons.svg#icon-feature4"></use>
@@ -165,11 +163,11 @@
       </section>
 
       <!-- What we do -->
-      <section class="section__whatwedo">
+      <section class="whatwedo">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
-          <div class="whatwedo">
-            <div class="whatwedo__thumb">
+          <ul class="whatwedo__list">
+            <li class="whatwedo__thumb anim">
               <img
                 srcset="
                   ./images/whatwedo/whatwedo1.jpg    1x,
@@ -180,8 +178,8 @@
                 width="370"
               />
               <p class="whatwedo__label">Десктопные приложения</p>
-            </div>
-            <div class="whatwedo__thumb">
+            </li>
+            <li class="whatwedo__thumb anim">
               <img
                 srcset="
                   ./images/whatwedo/whatwedo2.jpg    1x,
@@ -192,8 +190,8 @@
                 width="370"
               />
               <p class="whatwedo__label">Мобильные приложения</p>
-            </div>
-            <div class="whatwedo__thumb">
+            </li>
+            <li class="whatwedo__thumb anim">
               <img
                 srcset="
                   ./images/whatwedo/whatwedo3.jpg    1x,
@@ -204,17 +202,17 @@
                 width="370"
               />
               <p class="whatwedo__label">Дизайнерские решения</p>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
 
       <!-- Our team -->
-      <section class="section-team">
+      <section class="team">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
-          <ul class="team-list">
-            <li class="person">
+          <ul class="team__list">
+            <li class="person anim">
               <picture>
                 <source
                   srcset="
@@ -282,7 +280,7 @@
               </div>
             </li>
 
-            <li class="person">
+            <li class="person anim">
               <picture>
                 <source
                   srcset="
@@ -350,7 +348,7 @@
               </div>
             </li>
 
-            <li class="person">
+            <li class="person anim">
               <picture>
                 <source
                   srcset="
@@ -418,7 +416,7 @@
               </div>
             </li>
 
-            <li class="person">
+            <li class="person anim">
               <picture>
                 <source
                   srcset="
@@ -489,54 +487,100 @@
         </div>
       </section>
 
-      <!-- Customers -->
-      <section class="section">
-        <div class="container">
+      <!-- Clients -->
+      <section class="clients">
+        <div class="clients__container">
           <h2 class="section__title">Постоянные клиенты</h2>
-          <ul class="clients">
-            <li class="clients__item">
-              <a href="#" class="client__link">
-                <svg class="icon" width="106" height="60">
-                  <use href="./images/icons.svg#icon-client1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="clients__item">
-              <a href="#" class="client__link">
-                <svg class="icon" width="106" height="60">
-                  <use href="./images/icons.svg#icon-client2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="clients__item">
-              <a href="#" class="client__link">
-                <svg class="icon" width="106" height="60">
-                  <use href="./images/icons.svg#icon-client3"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="clients__item">
-              <a href="#" class="client__link">
-                <svg class="icon" width="106" height="60">
-                  <use href="./images/icons.svg#icon-client4"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="clients__item">
-              <a href="#" class="client__link">
-                <svg class="icon" width="106" height="60">
-                  <use href="./images/icons.svg#icon-client5"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="clients__item">
-              <a href="#" class="client__link">
-                <svg class="icon" width="106" height="60">
-                  <use href="./images/icons.svg#icon-client6"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          <div class="moving-bar">
+            <ul class="clients__list">
+              <li class="clients__item">
+                <a href="#" class="client__link">
+                  <svg class="icon" width="106" height="60">
+                    <use href="./images/icons.svg#icon-client1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="clients__item">
+                <a href="#" class="client__link">
+                  <svg class="icon" width="106" height="60">
+                    <use href="./images/icons.svg#icon-client2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="clients__item">
+                <a href="#" class="client__link">
+                  <svg class="icon" width="106" height="60">
+                    <use href="./images/icons.svg#icon-client3"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="clients__item">
+                <a href="#" class="client__link">
+                  <svg class="icon" width="106" height="60">
+                    <use href="./images/icons.svg#icon-client4"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="clients__item">
+                <a href="#" class="client__link">
+                  <svg class="icon" width="106" height="60">
+                    <use href="./images/icons.svg#icon-client5"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="clients__item">
+                <a href="#" class="client__link">
+                  <svg class="icon" width="106" height="60">
+                    <use href="./images/icons.svg#icon-client6"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <ul class="clients__list clients__list--copy">
+              <li class="clients__item">
+                <a href="#" class="client__link">
+                  <svg class="icon" width="106" height="60">
+                    <use href="./images/icons.svg#icon-client1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="clients__item">
+                <a href="#" class="client__link">
+                  <svg class="icon" width="106" height="60">
+                    <use href="./images/icons.svg#icon-client2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="clients__item">
+                <a href="#" class="client__link">
+                  <svg class="icon" width="106" height="60">
+                    <use href="./images/icons.svg#icon-client3"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="clients__item">
+                <a href="#" class="client__link">
+                  <svg class="icon" width="106" height="60">
+                    <use href="./images/icons.svg#icon-client4"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="clients__item">
+                <a href="#" class="client__link">
+                  <svg class="icon" width="106" height="60">
+                    <use href="./images/icons.svg#icon-client5"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="clients__item">
+                <a href="#" class="client__link">
+                  <svg class="icon" width="106" height="60">
+                    <use href="./images/icons.svg#icon-client6"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
@@ -622,7 +666,7 @@
     <footer class="footer" id="contacts">
       <div class="footer__container">
         <div class="footer__address">
-          <a href="./index.html" class="logo"
+          <a href="#header" class="logo"
             >Web<span class="logo--white">Studio</span></a
           >
           <address class="address">
@@ -699,5 +743,6 @@
 
     <script src="./js/modal.js" type="module"></script>
     <script src="./js/mobile-menu.js" type="module"></script>
+    <script src="./js/animation.js" type="module"></script>
   </body>
 </html>

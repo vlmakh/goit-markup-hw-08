@@ -10,7 +10,7 @@
 
   <body>
     <!-- Header -->
-    <header class="page-header">
+    <header class="page-header" id="header">
       <div class="page-header__container">
         <a href="./index.html" class="logo"
           >Web<span class="logo--black">Studio</span></a
@@ -52,7 +52,7 @@
                 >
               </li>
               <li class="nav__item">
-                <a href="#contacts" class="nav__link">Контакты</a>
+                <a href="#contacts" class="nav__link" data-contacts>Контакты</a>
               </li>
             </ul>
           </nav>
@@ -157,7 +157,7 @@
 
           <!--Product list -->
           <ul class="product-list">
-            <li class="product-list__item" data-category="Веб-сайт">
+            <li class="product-list__item anim" data-category="Веб-сайт">
               <a href="#" class="product">
                 <div class="product__thumb">
                   <picture>
@@ -207,7 +207,7 @@
               </a>
             </li>
 
-            <li class="product-list__item" data-category="Дизайн">
+            <li class="product-list__item anim" data-category="Дизайн">
               <a href="#" class="product">
                 <div class="product__thumb">
                   <picture>
@@ -258,7 +258,7 @@
               </a>
             </li>
 
-            <li class="product-list__item" data-category="Приложение">
+            <li class="product-list__item anim" data-category="Приложение">
               <a href="#" class="product">
                 <div class="product__thumb">
                   <picture>
@@ -308,7 +308,7 @@
               </a>
             </li>
 
-            <li class="product-list__item" data-category="Маркетинг">
+            <li class="product-list__item anim" data-category="Маркетинг">
               <a href="#" class="product">
                 <div class="product__thumb">
                   <picture>
@@ -357,7 +357,7 @@
               </a>
             </li>
 
-            <li class="product-list__item" data-category="Приложение">
+            <li class="product-list__item anim" data-category="Приложение">
               <a href="#" class="product">
                 <div class="product__thumb">
                   <picture>
@@ -406,7 +406,7 @@
               </a>
             </li>
 
-            <li class="product-list__item" data-category="Веб-сайт">
+            <li class="product-list__item anim" data-category="Веб-сайт">
               <a href="#" class="product">
                 <div class="product__thumb">
                   <picture>
@@ -455,7 +455,7 @@
               </a>
             </li>
 
-            <li class="product-list__item" data-category="Дизайн">
+            <li class="product-list__item anim" data-category="Дизайн">
               <a href="#" class="product">
                 <div class="product__thumb">
                   <picture>
@@ -504,7 +504,7 @@
               </a>
             </li>
 
-            <li class="product-list__item" data-category="Маркетинг">
+            <li class="product-list__item anim" data-category="Маркетинг">
               <a href="#" class="product">
                 <div class="product__thumb">
                   <picture>
@@ -553,7 +553,7 @@
               </a>
             </li>
 
-            <li class="product-list__item" data-category="Приложение">
+            <li class="product-list__item anim" data-category="Приложение">
               <a href="#" class="product">
                 <div class="product__thumb">
                   <picture>
@@ -610,7 +610,7 @@
     <footer class="footer" id="contacts">
       <div class="container footer__container">
         <div class="footer__address">
-          <a href="./index.html" class="logo"
+          <a href="#header" class="logo"
             >Web<span class="logo--white">Studio</span></a
           >
           <address class="address">
@@ -687,5 +687,6 @@
     </footer>
 
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/animation.js" type="module"></script>
   </body>
 </html>

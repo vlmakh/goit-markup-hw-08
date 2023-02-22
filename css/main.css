@@ -305,6 +305,16 @@ summary {
   border-radius: 50%;
 }
 
+.anim {
+  opacity: 0;
+  -webkit-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
+}
+
+.anim.active {
+  opacity: 1;
+}
+
 html,
 body {
   scroll-behavior: smooth;
@@ -337,12 +347,13 @@ img {
   height: auto;
 }
 
-.section, .section-team, .section__whatwedo, .section-benefits {
+.section, .clients, .team, .whatwedo, .benefits {
   padding-top: 60px;
   padding-bottom: 60px;
+  overflow: hidden;
 }
 @media screen and (min-width: 1200px) {
-  .section, .section-team, .section__whatwedo, .section-benefits {
+  .section, .clients, .team, .whatwedo, .benefits {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -359,24 +370,24 @@ img {
   }
 }
 
-.container, .container-control-panel, .footer__container, .page-header__container {
+.container, .container-control-panel, .footer__container, .clients__container, .page-header__container {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media screen and (max-width: 768px) {
-  .container, .container-control-panel, .footer__container, .page-header__container {
+  .container, .container-control-panel, .footer__container, .clients__container, .page-header__container {
     max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-  .container, .container-control-panel, .footer__container, .page-header__container {
+  .container, .container-control-panel, .footer__container, .clients__container, .page-header__container {
     max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .container, .container-control-panel, .footer__container, .page-header__container {
+  .container, .container-control-panel, .footer__container, .clients__container, .page-header__container {
     max-width: 1200px;
   }
 }
@@ -799,6 +810,65 @@ img {
   }
 }
 
+.title1 {
+  -webkit-animation: from_left 1000ms;
+          animation: from_left 1000ms;
+}
+
+.title2 {
+  -webkit-animation: from_right 1000ms;
+          animation: from_right 1000ms;
+}
+
+@-webkit-keyframes from_left {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes from_left {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@-webkit-keyframes from_right {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes from_right {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
 .button-order {
   width: 200px;
   margin-top: 30px;
@@ -810,12 +880,35 @@ img {
   transition: -webkit-box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 1400ms;
+          animation-duration: 1400ms;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
 }
 .button-order:hover, .button-order:focus {
   -webkit-box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.4);
           box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.4);
 }
 
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .backdrop {
   position: fixed;
   top: 0;
@@ -1088,16 +1181,16 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .section-benefits {
+  .benefits {
     padding-bottom: 0;
   }
 }
 
-.benefits {
+.benefits__list {
   list-style: none;
 }
 @media screen and (min-width: 768px) {
-  .benefits {
+  .benefits__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1168,20 +1261,21 @@ img {
 }
 
 @media screen and (max-width: 1200px) {
-  .section__whatwedo {
+  .whatwedo {
     display: none;
   }
 }
 @media screen and (min-width: 1200px) {
-  .section__whatwedo {
+  .whatwedo {
     display: block;
   }
 }
 
-.whatwedo {
+.whatwedo__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  list-style: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1208,15 +1302,15 @@ img {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.section-team {
+.team {
   background: #f5f4fa;
 }
 
-.team-list {
+.team__list {
   list-style: none;
 }
 @media screen and (min-width: 768px) {
-  .team-list {
+  .team__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1227,7 +1321,7 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
-  .team-list {
+  .team__list {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     margin-top: 50px;
@@ -1296,15 +1390,59 @@ img {
   background-color: #2196f3;
 }
 
-.clients {
+@media screen and (min-width: 1200px) {
+  .clients__container {
+    padding: 0;
+    max-width: 100%;
+  }
+}
+
+.clients__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 30px;
   list-style: none;
   margin-top: 30px;
+  width: 100%;
+}
+@media screen and (max-width: 1199.98px) {
+  .clients__list {
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.moving-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (min-width: 1200px) {
+  .moving-bar {
+    width: 200%;
+    -webkit-animation: moving 20s linear infinite;
+            animation: moving 20s linear infinite;
+  }
+}
+.moving-bar:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .clients__list--copy {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1346,6 +1484,27 @@ img {
   outline: none;
 }
 
+@-webkit-keyframes moving {
+  from {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@keyframes moving {
+  from {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
 .footer {
   padding: 60px 0;
   background: #2f303a;
@@ -1630,8 +1789,8 @@ img {
 .button-filter:hover, .button-filter:focus-visible {
   background: #2196f3;
   color: #ffffff;
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.8);
+          box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.8);
 }
 @media screen and (min-width: 768px) {
   .button-filter {
@@ -1646,8 +1805,6 @@ img {
 [value=Маркетинг]:checked .control-panel [for=Маркетинг] {
   color: #ffffff;
   background-color: #2196f3;
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 [value=Веб-сайт]:checked ~ .product-list .product-list__item:not([data-category=Веб-сайт]),

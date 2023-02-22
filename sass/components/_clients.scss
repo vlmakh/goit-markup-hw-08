@@ -1,9 +1,51 @@
 .clients {
+  @extend .section;
+}
+
+.clients__container {
+  @extend .container;
+
+  @media screen and (min-width: 1200px) {
+    padding: 0;
+    max-width: 100%;
+  }
+}
+
+.clients__list {
   display: flex;
   flex-wrap: wrap;
-  gap: $gap;
   list-style: none;
   margin-top: 30px;
+  width: 100%;
+
+  @media screen and (max-width: 1199.98px) {
+    gap: $gap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+
+.moving-bar {
+  display: flex;
+
+  @media screen and (min-width: 1200px) {
+    width: 200%;
+    animation: moving 20s linear infinite;
+  }
+
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+.clients__list--copy {
+  @media screen and (max-width: 1199.98px) {
+    display: none;
+  }
 }
 
 .clients__item {
@@ -37,5 +79,15 @@
     color: $color-accent;
     border-color: $color-accent;
     outline: none;
+  }
+}
+
+@keyframes moving {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-50%);
   }
 }
